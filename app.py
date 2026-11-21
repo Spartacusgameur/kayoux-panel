@@ -18,7 +18,7 @@ DISCORD_REDIRECT_URI = os.environ.get("DISCORD_REDIRECT_URI", "")
 DISCORD_GUILD_ID = os.environ.get("DISCORD_GUILD_ID", "")
 ADMIN_ROLE_ID = os.environ.get("ADMIN_ROLE_ID", "")
 BOT_API_TOKEN = os.environ.get("BOT_API_TOKEN", "")
-DATABASE = os.environ.get("DATABASE_PATH", "/var/data/kayoux.db")
+DATABASE = os.environ.get("DATABASE_PATH", "/tmp/kayoux.db")
 
 DISCORD_API = "https://discord.com/api/v10"
 
