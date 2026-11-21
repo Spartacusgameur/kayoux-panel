@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: kayoux-panel
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    plan: free
+    healthCheckPath: /login
+    disk:
+      name: kayoux-data
+      mountPath: /var/data
+      sizeGB: 1
